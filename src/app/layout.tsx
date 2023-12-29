@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Singleton Wiki',
+	title: 'Solo Wiki',
 	description: 'A wiki of one',
 };
 
