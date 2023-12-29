@@ -1,10 +1,10 @@
-# Singleton Wiki
+# Solo Wiki
 
 Built by Jared Hettinger
 
-Singleton Wiki is exactly what it says: a [collaboratively editable publication](https://en.wikipedia.org/wiki/Wiki) of exactly [one item](https://en.wikipedia.org/wiki/Singleton_(mathematics)).
+Solo Wiki is exactly what it says: a [collaboratively editable publication](https://en.wikipedia.org/wiki/Wiki) of exactly [one item](https://en.wikipedia.org/wiki/Singleton_(mathematics)).
 
-The full code for this project can be viewed at https://github.com/kafkaesc/Singleton-Wiki.
+The full code for this project can be viewed at https://github.com/kafkaesc/Solo-Wiki.
 
 ## Initial Run
 

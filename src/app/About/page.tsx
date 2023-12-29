@@ -5,7 +5,7 @@ import PageColumn from '@/components/PageColumn';
 export default function About() {
 	return (
 		<PageColumn>
-			<H1>About Singleton Wiki</H1>
+			<H1>About Solo Wiki</H1>
 			<P>Built by Jared Hettinger</P>
 		</PageColumn>
 	);
