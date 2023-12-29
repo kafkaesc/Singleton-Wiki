@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Solo Wiki',
-	description: 'A wiki of one',
+	title: 'Solo Wiki | A wiki of one | Built by Jared Hettinger',
+	description: 'Solo Wiki is a community-supported wiki of one item.',
 };
 
 export default function RootLayout({
