@@ -116,14 +116,14 @@ function TextButton({
 	) : className ? (
 		<button
 			{...props}
-			className={`px-2 text-wi-black hover:bg-wi-gray hover:underline ${className}`}
+			className={`px-2 text-link-blue hover:bg-wi-gray hover:underline ${className}`}
 		>
 			{children}
 		</button>
 	) : (
 		<button
 			{...props}
-			className="px-2 text-wi-black hover:bg-wi-gray hover:underline"
+			className="px-2 text-link-blue hover:bg-wi-gray hover:underline"
 		>
 			{children}
 		</button>
