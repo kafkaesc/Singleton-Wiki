@@ -8,6 +8,19 @@ const config: Config = {
 		'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
+		colors: {
+			black: '#000000',
+			white: '#ffffff',
+			'link-blue': '#3366cc',
+			'wi-black': '#202122',
+			'wi-blue': '#cedff2',
+			'wi-blue-dark': '#afcbea',
+			'wi-blue-light': '#f5faff',
+			'wi-gray': '#eeeeee',
+			'wi-green': '#cef2e0',
+			'wi-green-dark': '#afeacc',
+			'wi-green-light': '#f5fffa',
+		},
 		extend: {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

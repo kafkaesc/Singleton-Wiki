@@ -8,8 +8,8 @@ interface PProps {
 
 export default function P({ children, className, ...props }: PProps) {
 	return className ? (
-		<p className={`mb-1 ${className}`}>{children}</p>
+		<p className={`mb-1 text-wi-black ${className}`}>{children}</p>
 	) : (
-		<p className="mb-1">{children}</p>
+		<p className="mb-1 text-wi-black">{children}</p>
 	);
 }
