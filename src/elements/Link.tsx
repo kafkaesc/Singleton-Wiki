@@ -17,13 +17,13 @@ export default function Link({
 	return className ? (
 		<NLink
 			{...props}
-			className={`text-blue-600 hover:underline ${className}`}
+			className={`text-link-blue hover:underline ${className}`}
 			href={href}
 		>
 			{children}
 		</NLink>
 	) : (
-		<NLink {...props} className="text-blue-600 hover:underline" href={href}>
+		<NLink {...props} className="text-link-blue hover:underline" href={href}>
 			{children}
 		</NLink>
 	);

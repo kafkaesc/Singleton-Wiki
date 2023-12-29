@@ -8,11 +8,11 @@ interface AProps {
 
 export default function A({ children, className, ...props }: AProps) {
 	return className ? (
-		<a {...props} className={`text-blue-600 hover:underline ${className}`}>
+		<a {...props} className={`text-link-blue hover:underline ${className}`}>
 			{children}
 		</a>
 	) : (
-		<a {...props} className="text-blue-600 hover:underline">
+		<a {...props} className="text-link-blue hover:underline">
 			{children}
 		</a>
 	);

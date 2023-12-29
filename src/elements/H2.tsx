@@ -8,11 +8,11 @@ interface H2Props {
 
 export default function H2({ children, className, ...props }: H2Props) {
 	return className ? (
-		<h2 {...props} className={`text-2xl ${className}`}>
+		<h2 {...props} className={`text-2xl text-wi-black ${className}`}>
 			{children}
 		</h2>
 	) : (
-		<h2 {...props} className="text-2xl">
+		<h2 {...props} className="text-2xl text-wi-black">
 			{children}
 		</h2>
 	);

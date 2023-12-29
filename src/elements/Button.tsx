@@ -18,7 +18,7 @@ function PrimaryButton({
 			<button
 				{...props}
 				disabled={true}
-				className={`px-2 text-white cursor-not-allowed bg-zinc-300 ${className}`}
+				className={`px-2 cursor-not-allowed text-wi-black bg-wi-blue ${className}`}
 			>
 				{children}
 			</button>
@@ -26,7 +26,7 @@ function PrimaryButton({
 			<button
 				{...props}
 				disabled={true}
-				className="px-2 text-white cursor-not-allowed bg-zinc-300"
+				className="px-2 cursor-not-allowed text-wi-black bg-wi-blue"
 			>
 				{children}
 			</button>
@@ -34,12 +34,15 @@ function PrimaryButton({
 	) : className ? (
 		<button
 			{...props}
-			className={`px-2 text-white bg-sky-600 hover:bg-sky-800 ${className}`}
+			className={`px-2 text-wi-black bg-wi-blue hover:bg-wi-blue-dark hover:underline ${className}`}
 		>
 			{children}
 		</button>
 	) : (
-		<button {...props} className="px-2 text-white bg-sky-600 hover:bg-sky-800">
+		<button
+			{...props}
+			className="px-2 text-wi-black bg-wi-blue hover:bg-wi-blue-dark hover:underline"
+		>
 			{children}
 		</button>
 	);
@@ -56,7 +59,7 @@ function SecondaryButton({
 			<button
 				{...props}
 				disabled
-				className={`px-2 text-white cursor-not-allowed bg-zinc-300 ${className}`}
+				className={`px-2 cursor-not-allowed text-wi-black bg-wi-green ${className}`}
 			>
 				{children}
 			</button>
@@ -64,7 +67,7 @@ function SecondaryButton({
 			<button
 				{...props}
 				disabled
-				className="px-2 text-white cursor-not-allowed bg-zinc-300"
+				className="px-2 cursor-not-allowed text-wi-black bg-wi-green"
 			>
 				{children}
 			</button>
@@ -72,14 +75,14 @@ function SecondaryButton({
 	) : className ? (
 		<button
 			{...props}
-			className={`px-2 text-white bg-teal-600 hover:bg-teal-800 ${className}`}
+			className={`px-2 text-wi-black bg-wi-green hover:bg-wi-green-dark hover:underline ${className}`}
 		>
 			{children}
 		</button>
 	) : (
 		<button
 			{...props}
-			className="px-2 text-white bg-teal-600 hover:bg-teal-800"
+			className="px-2 text-wi-black bg-wi-green hover:bg-wi-green-dark hover:underline"
 		>
 			{children}
 		</button>
@@ -97,7 +100,7 @@ function TextButton({
 			<button
 				{...props}
 				disabled={disabled}
-				className={`px-2 cursor-not-allowed ${className}`}
+				className={`px-2 cursor-not-allowed text-wi-black ${className}`}
 			>
 				{children}
 			</button>
@@ -105,17 +108,23 @@ function TextButton({
 			<button
 				{...props}
 				disabled={disabled}
-				className="px-2 cursor-not-allowed"
+				className="px-2 cursor-not-allowed text-wi-black"
 			>
 				{children}
 			</button>
 		)
 	) : className ? (
-		<button {...props} className={`px-2 hover:bg-zinc-200 ${className}`}>
+		<button
+			{...props}
+			className={`px-2 text-link-blue hover:bg-wi-gray hover:underline ${className}`}
+		>
 			{children}
 		</button>
 	) : (
-		<button {...props} className="px-2 hover:bg-zinc-200">
+		<button
+			{...props}
+			className="px-2 text-link-blue hover:bg-wi-gray hover:underline"
+		>
 			{children}
 		</button>
 	);
