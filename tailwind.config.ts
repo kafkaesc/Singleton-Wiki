@@ -17,6 +17,8 @@ const config: Config = {
 			'wi-blue-dark': '#afcbea',
 			'wi-blue-light': '#f5faff',
 			'wi-gray': '#eeeeee',
+			'wi-gray-dark': '#c8ccd1',
+			'wi-gray-light': '#f9f9f9',
 			'wi-green': '#cef2e0',
 			'wi-green-dark': '#afeacc',
 			'wi-green-light': '#f5fffa',
