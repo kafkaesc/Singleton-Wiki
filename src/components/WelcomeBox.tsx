@@ -4,7 +4,7 @@ import P from '@/elements/P';
 
 export default function WelcomeBox() {
 	return (
-		<div className="p-2 text-center border bg-wi-gray-light border-wi-gray-dark">
+		<div className="p-2 text-center border bg-wi-gray-2 border-wi-gray+2">
 			<H2 className="mb-1">Welcome to Solo Wiki,</H2>
 			<P>
 				the{' '}

@@ -7,6 +7,7 @@ import P from '@/elements/P';
 import PageColumn from '@/components/PageColumn';
 import TopNav from '@/components/TopNav';
 import WelcomeBox from '@/components/WelcomeBox';
+import WikiBox from '@/components/WikiBox';
 
 export const metadata: Metadata = {
 	title: 'Test | Solo Wiki | Built by Jared Hettinger',
@@ -37,6 +38,18 @@ export default function Test() {
 				<Button buttonStyle="text" disabled={true}>
 					Text
 				</Button>
+				<WikiBox heading="Default Wiki Box" className="my-1">
+					<p>Some time ago, nevermind how long</p>
+				</WikiBox>
+				<WikiBox boxStyle="gray" heading="Gray Wiki Box" className="my-1">
+					<p>Some time ago, nevermind how long</p>
+				</WikiBox>
+				<WikiBox boxStyle="blue" heading="Blue Wiki Box" className="my-1">
+					<p>Some time ago, nevermind how long</p>
+				</WikiBox>
+				<WikiBox boxStyle="green" heading="Green Wiki Box" className="my-1">
+					<p>Some time ago, nevermind how long</p>
+				</WikiBox>
 			</PageColumn>
 		</>
 	);
