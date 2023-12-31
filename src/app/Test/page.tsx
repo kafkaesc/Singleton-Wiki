@@ -5,6 +5,7 @@ import H1 from '@/elements/H1';
 import H2 from '@/elements/H2';
 import P from '@/elements/P';
 import PageColumn from '@/components/PageColumn';
+import SisterWikis from '@/components/SisterWikis';
 import TopNav from '@/components/TopNav';
 import WelcomeBox from '@/components/WelcomeBox';
 import WikiBox from '@/components/WikiBox';
@@ -50,6 +51,7 @@ export default function Test() {
 				<WikiBox boxStyle="green" heading="Green Wiki Box" className="my-1">
 					<p>Some time ago, nevermind how long</p>
 				</WikiBox>
+				<SisterWikis />
 			</PageColumn>
 		</>
 	);

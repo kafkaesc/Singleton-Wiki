@@ -1,6 +1,7 @@
 import Link from '@/elements/Link';
 import P from '@/elements/P';
 import PageColumn from '@/components/PageColumn';
+import SisterWikis from '@/components/SisterWikis';
 import TopNav from '@/components/TopNav';
 import WelcomeBox from '@/components/WelcomeBox';
 
@@ -20,6 +21,7 @@ export default function Home() {
 							Test
 						</Link>
 					</div>
+					<SisterWikis />
 				</PageColumn>
 			</main>
 		</>
