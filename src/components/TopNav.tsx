@@ -19,7 +19,7 @@ export default function TopNav({ className }: TopNavProps) {
 						Create Account
 					</Link>
 					<Link className="mx-2" href="/">
-						Login
+						Log in
 					</Link>
 				</div>
 			</div>
@@ -35,7 +35,7 @@ export default function TopNav({ className }: TopNavProps) {
 						Create Account
 					</Link>
 					<Link className="mx-2" href="/">
-						Login
+						Log in
 					</Link>
 				</div>
 			</div>
