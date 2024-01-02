@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 
 import WikiBoxBlue from '@/components/WikiBoxBlue';
-import WikiBoxGreen from './WikiBoxGreen';
 import WikiBoxDefault from '@/components/WikiBoxDefault';
+import WikiBoxGreen from '@/components/WikiBoxGreen';
 
 interface WikiBoxProps {
 	boxStyle?: 'blue' | 'gray' | 'green';
