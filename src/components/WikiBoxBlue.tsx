@@ -14,7 +14,7 @@ export default function WikiBoxBlue({
 	return className ? (
 		<div className={`p-2 border bg-wi-blue-light border-wi-blue ${className}`}>
 			{heading && (
-				<h2 className="px-2 py-1 border border-wi-blue-dark bg-wi-blue">
+				<h2 className="px-2 py-1 font-bold border border-wi-blue-dark bg-wi-blue">
 					{heading}
 				</h2>
 			)}
@@ -23,7 +23,7 @@ export default function WikiBoxBlue({
 	) : (
 		<div className="p-2 border bg-wi-blue-light border-wi-blue">
 			{heading && (
-				<h2 className="px-2 py-1 border border-wi-blue-dark bg-wi-blue">
+				<h2 className="px-2 py-1 font-bold border border-wi-blue-dark bg-wi-blue">
 					{heading}
 				</h2>
 			)}

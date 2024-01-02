@@ -16,7 +16,7 @@ export default function WikiBoxGreen({
 			className={`p-2 border bg-wi-green-light border-wi-green ${className}`}
 		>
 			{heading && (
-				<h2 className="px-2 py-1 border border-wi-green-dark bg-wi-green">
+				<h2 className="px-2 py-1 font-bold border border-wi-green-dark bg-wi-green">
 					{heading}
 				</h2>
 			)}
@@ -25,7 +25,7 @@ export default function WikiBoxGreen({
 	) : (
 		<div className="p-2 border bg-wi-green-light border-wi-green">
 			{heading && (
-				<h2 className="px-2 py-1 border border-wi-green-dark bg-wi-green">
+				<h2 className="px-2 py-1 font-bold border border-wi-green-dark bg-wi-green">
 					{heading}
 				</h2>
 			)}
