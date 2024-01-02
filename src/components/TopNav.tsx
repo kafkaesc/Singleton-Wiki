@@ -1,5 +1,6 @@
 import Link from '@/elements/Link';
 import PageColumn from '@/components/PageColumn';
+import TopNavLogo from '@/components/TopNavLogo';
 
 interface TopNavProps {
 	className?: string;
@@ -12,13 +13,13 @@ export default function TopNav({ className }: TopNavProps) {
 		>
 			<div className="flex items-center min-h-14">
 				<div className="flex-none">
-					<h1 className="text-4xl">Solo Wiki</h1>
+					<TopNavLogo />
 				</div>
 				<div className="text-right grow">
-					<Link className="mx-2" href="/">
+					<Link className="mx-2" href="/CreateAccount">
 						Create Account
 					</Link>
-					<Link className="mx-2" href="/">
+					<Link className="mx-2" href="/LogIn">
 						Log in
 					</Link>
 				</div>
