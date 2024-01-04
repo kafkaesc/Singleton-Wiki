@@ -27,12 +27,12 @@ export default function Test() {
 						This is the test page. You can also go <Link href="/">Home</Link> or
 						to the <Link href="/About">About</Link> page.
 					</P>
-					<H2>Button tests</H2>
+					<H2>Button V2 tests</H2>
 					<Button>Default</Button>
 					<Button buttonStyle="primary">Primary</Button>
 					<Button buttonStyle="secondary">Secondary</Button>
 					<Button buttonStyle="text">Text</Button>
-					<H2>Disabled Buttons</H2>
+					<H2>Disabled V2 Buttons</H2>
 					<Button disabled>Default</Button>
 					<Button buttonStyle="primary" disabled={true}>
 						Primary
@@ -41,6 +41,17 @@ export default function Test() {
 						Secondary
 					</Button>
 					<Button buttonStyle="text" disabled={true}>
+						Text
+					</Button>
+					<H2>Styled V2 Buttons</H2>
+					<Button className="my-2">Default</Button>
+					<Button buttonStyle="primary" className="my-2">
+						Primary
+					</Button>
+					<Button buttonStyle="secondary" className="my-2">
+						Secondary
+					</Button>
+					<Button buttonStyle="text" className="my-2">
 						Text
 					</Button>
 					<WikiBox heading="Default Wiki Box" className="my-1">
