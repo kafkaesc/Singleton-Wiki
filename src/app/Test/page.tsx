@@ -44,16 +44,16 @@ export default function Test() {
 						Text
 					</Button>
 					<WikiBox heading="Default Wiki Box" className="my-1">
-						<p>Some time ago, nevermind how long</p>
+						<p>Some time ago, never mind how long</p>
 					</WikiBox>
 					<WikiBox boxStyle="gray" heading="Gray Wiki Box" className="my-1">
-						<p>Some time ago, nevermind how long</p>
+						<p>Some time ago, never mind how long</p>
 					</WikiBox>
 					<WikiBox boxStyle="blue" heading="Blue Wiki Box" className="my-1">
-						<p>Some time ago, nevermind how long</p>
+						<p>Some time ago, never mind how long</p>
 					</WikiBox>
 					<WikiBox boxStyle="green" heading="Green Wiki Box" className="my-1">
-						<p>Some time ago, nevermind how long</p>
+						<p>Some time ago, never mind how long</p>
 					</WikiBox>
 					<OneToFourColumn className="p-1">
 						<p>
@@ -96,18 +96,14 @@ export default function Test() {
 					<OneToFourColumn className="p-1">
 						<p>
 							Music for Steamboat Willie was arranged by Wilfred Jackson and
-							Bert Lewis, and it included the songs {`"Steamboat Bill"`}, a
-							composition popularized by baritone Arthur Collins during the
-							1910s, and the 19th century popular song {`"Turkey in the Straw"`}
-							.
+							Bert Lewis, and it included the songs {`"Steamboat Bill"`},
 						</p>
 					</OneToFourColumn>
 					<OneToFourColumn className="p-1">
 						<p>
 							The title of the film may be a parody of the Buster Keaton film
 							Steamboat Bill, Jr. (1928), itself a reference to the song by
-							Collins. Disney performed all of the voices in the film, although
-							there is little intelligible dialogue.
+							Collins.
 						</p>
 					</OneToFourColumn>
 					<SisterWikis />
