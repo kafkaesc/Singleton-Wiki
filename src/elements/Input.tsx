@@ -11,10 +11,18 @@ export default function Input({
 	name,
 	...props
 }: InputProps) {
+	// TODO: tie errString display to the status of the input and form somehow,
+	// good case to break it into it's own component
+	let errString = '';
 	return className ? (
 		<>
 			<label htmlFor={name} className="w-full font-bold text-wi-black">
 				{label}
+				{props.required && (
+					<span className="text-sm italic font-normal text-wi-red">
+						Required
+					</span>
+				)}
 			</label>
 			<input
 				{...props}
@@ -22,11 +30,19 @@ export default function Input({
 				id={name}
 				name={name}
 			/>
+			<span className="block text-sm italic text-wi-red">
+				{errString ? errString : <>&nbsp;</>}
+			</span>
 		</>
 	) : (
 		<>
 			<label htmlFor={name} className="w-full font-bold text-wi-black">
 				{label}
+				{props.required && (
+					<span className="ml-1 text-sm italic font-normal text-wi-red">
+						Required
+					</span>
+				)}
 			</label>
 			<input
 				{...props}
@@ -34,6 +50,9 @@ export default function Input({
 				id={name}
 				name={name}
 			/>
+			<span className="block text-sm italic text-wi-red">
+				{errString ? errString : <>&nbsp;</>}
+			</span>
 		</>
 	);
 }
