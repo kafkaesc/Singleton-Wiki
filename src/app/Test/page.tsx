@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Button from '@/elements/Button';
 import H1 from '@/elements/H1';
 import H2 from '@/elements/H2';
+import H3 from '@/elements/H3';
 import Input from '@/elements/Input';
 import Link from '@/elements/Link';
 import P from '@/elements/P';
@@ -23,12 +24,12 @@ export default function Test() {
 			<TopNav className="mb-2" />
 			<main>
 				<PageColumn>
-					<H1>Test Page</H1>
+					<H1 className="mb-1">Test Page</H1>
 					<P>
 						This is the test page. You can also go <Link href="/">Home</Link> or
 						to the <Link href="/About">About</Link> page.
 					</P>
-					<H2>Input Styles</H2>
+					<H2 className="mb-1">Input Styles</H2>
 					<div className="mb-2">
 						<Input
 							label="Default Text Input"
@@ -52,8 +53,8 @@ export default function Test() {
 						/>
 					</div>
 					<div className="mb-2">
-						<H2>Button V2 tests</H2>
-						<P>Disabled V2 Buttons</P>
+						<H2 className="mb-1">Button V2 tests</H2>
+						<H3 className="mb-1">Disabled V2 Buttons</H3>
 						<Button disabled>Default</Button>
 						<Button buttonStyle="primary" disabled={true}>
 							Primary
@@ -64,7 +65,7 @@ export default function Test() {
 						<Button buttonStyle="text" disabled={true}>
 							Text
 						</Button>
-						<P>Styled V2 Buttons</P>
+						<H3 className="mb-1">Styled V2 Buttons</H3>
 						<Button className="mx-2">Default</Button>
 						<Button buttonStyle="primary" className="mx-2">
 							Primary
@@ -77,7 +78,7 @@ export default function Test() {
 						</Button>
 					</div>
 					<div className="mb-2">
-						<H2>Wiki Boxes</H2>
+						<H2 className="mb-1">Wiki Boxes</H2>
 						<WikiBox heading="Default Wiki Box" className="my-1">
 							<p>Some time ago, never mind how long</p>
 						</WikiBox>
@@ -92,7 +93,7 @@ export default function Test() {
 						</WikiBox>
 					</div>
 					<div className="mb-2">
-						<H2>Layout Columns</H2>
+						<H2 className="mb-1">Layout Columns</H2>
 						<OneToFourColumn className="p-1">
 							<p>
 								Steamboat Willie is a 1928 American animated short film directed
