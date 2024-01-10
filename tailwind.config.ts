@@ -10,6 +10,7 @@ const config: Config = {
 	theme: {
 		colors: {
 			black: '#000000',
+			foo: '#f00',
 			white: '#ffffff',
 			'link-blue': '#3366cc',
 			'wi-black': '#202122',
@@ -24,6 +25,9 @@ const config: Config = {
 			'wi-green': '#cef2e0',
 			'wi-green-dark': '#afeacc',
 			'wi-green-light': '#f5fffa',
+			'wi-red': '#d73333',
+			'wi-red-dark': '#be2525',
+			'wi-red-light': '#dd5454',
 		},
 		extend: {
 			backgroundImage: {
