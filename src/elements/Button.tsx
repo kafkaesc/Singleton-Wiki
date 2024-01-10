@@ -13,35 +13,19 @@ function PrimaryButton({
 	className,
 	...props
 }: StyledButtonProps) {
-	return disabled ? (
-		className ? (
-			<button
-				{...props}
-				disabled={true}
-				className={`px-2 cursor-not-allowed text-wi-black bg-wi-blue ${className}`}
-			>
-				{children}
-			</button>
-		) : (
-			<button
-				{...props}
-				disabled={true}
-				className="px-2 cursor-not-allowed text-wi-black bg-wi-blue"
-			>
-				{children}
-			</button>
-		)
-	) : className ? (
+	return className ? (
 		<button
 			{...props}
-			className={`px-2 text-wi-black bg-wi-blue hover:bg-wi-blue-dark hover:underline ${className}`}
+			className={`px-2 text-wi-black bg-wi-blue enabled:hover:bg-wi-blue-dark enabled:hover:underline disabled:cursor-not-allowed ${className}`}
+			disabled={!!disabled}
 		>
 			{children}
 		</button>
 	) : (
 		<button
 			{...props}
-			className="px-2 text-wi-black bg-wi-blue hover:bg-wi-blue-dark hover:underline"
+			className="px-2 text-wi-black bg-wi-blue enabled:hover:bg-wi-blue-dark enabled:hover:underline disabled:cursor-not-allowed"
+			disabled={!!disabled}
 		>
 			{children}
 		</button>
@@ -54,35 +38,19 @@ function SecondaryButton({
 	className,
 	...props
 }: StyledButtonProps): JSX.Element {
-	return disabled ? (
-		className ? (
-			<button
-				{...props}
-				disabled
-				className={`px-2 cursor-not-allowed text-wi-black bg-wi-green ${className}`}
-			>
-				{children}
-			</button>
-		) : (
-			<button
-				{...props}
-				disabled
-				className="px-2 cursor-not-allowed text-wi-black bg-wi-green"
-			>
-				{children}
-			</button>
-		)
-	) : className ? (
+	return className ? (
 		<button
 			{...props}
-			className={`px-2 text-wi-black bg-wi-green hover:bg-wi-green-dark hover:underline ${className}`}
+			className={`px-2 text-wi-black bg-wi-green enabled:hover:bg-wi-green-dark enabled:hover:underline disabled:cursor-not-allowed ${className}`}
+			disabled={!!disabled}
 		>
 			{children}
 		</button>
 	) : (
 		<button
 			{...props}
-			className="px-2 text-wi-black bg-wi-green hover:bg-wi-green-dark hover:underline"
+			className="px-2 text-wi-black bg-wi-green enabled:hover:bg-wi-green-dark enabled:hover:underline disabled:cursor-not-allowed"
+			disabled={!!disabled}
 		>
 			{children}
 		</button>
@@ -95,35 +63,19 @@ function TextButton({
 	className,
 	...props
 }: StyledButtonProps): JSX.Element {
-	return disabled ? (
-		className ? (
-			<button
-				{...props}
-				disabled={disabled}
-				className={`px-2 cursor-not-allowed text-wi-black ${className}`}
-			>
-				{children}
-			</button>
-		) : (
-			<button
-				{...props}
-				disabled={disabled}
-				className="px-2 cursor-not-allowed text-wi-black"
-			>
-				{children}
-			</button>
-		)
-	) : className ? (
+	return className ? (
 		<button
 			{...props}
-			className={`px-2 text-link-blue hover:bg-wi-gray hover:underline ${className}`}
+			className={`px-2 enabled:text-link-blue disabled:text-wi-black enabled:hover:bg-wi-gray enabled:hover:underline disabled:cursor-not-allowed ${className}`}
+			disabled={!!disabled}
 		>
 			{children}
 		</button>
 	) : (
 		<button
 			{...props}
-			className="px-2 text-link-blue hover:bg-wi-gray hover:underline"
+			className="px-2 enabled:text-link-blue disabled:text-wi-black enabled:hover:bg-wi-gray enabled:hover:underline disabled:cursor-not-allowed"
+			disabled={!!disabled}
 		>
 			{children}
 		</button>
@@ -146,15 +98,15 @@ export default function Button({
 	...props
 }: ButtonProps) {
 	return buttonStyle === 'secondary' ? (
-		<SecondaryButton {...props} className={className} disabled={disabled}>
+		<SecondaryButton {...props} className={className} disabled={!!disabled}>
 			{children}
 		</SecondaryButton>
 	) : buttonStyle === 'text' ? (
-		<TextButton {...props} className={className} disabled={disabled}>
+		<TextButton {...props} className={className} disabled={!!disabled}>
 			{children}
 		</TextButton>
 	) : (
-		<PrimaryButton {...props} className={className} disabled={disabled}>
+		<PrimaryButton {...props} className={className} disabled={!!disabled}>
 			{children}
 		</PrimaryButton>
 	);
