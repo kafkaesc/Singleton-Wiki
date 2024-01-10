@@ -45,9 +45,16 @@ export default function Test() {
 							type="text"
 						/>
 						<Input
+							label="Required Text Input"
+							name="test-required-text"
+							placeholder="Enter text here..."
+							required
+							type="text"
+						/>
+						<Input
 							className="bg-wi-blue"
 							label="Classed Text Input"
-							name="test-text-classed"
+							name="test-classed-text"
 							placeholder="Enter text here..."
 							type="text"
 						/>
